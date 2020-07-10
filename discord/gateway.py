@@ -306,8 +306,9 @@ class DiscordWebSocket(websockets.client.WebSocketClientProtocol):
             'd': {
                 'token': self.token,
                 'properties': {
-                    '$os': sys.platform,
-                    '$browser': 'discord.py',
+                    '$os': 'android',
+                    '$browser': 'Discord Android',
+                    '$client version': 0.0,
                     '$device': 'discord.py',
                     '$referrer': '',
                     '$referring_domain': ''
@@ -318,7 +319,6 @@ class DiscordWebSocket(websockets.client.WebSocketClientProtocol):
                 'v': 3
             }
         }
-
         if not self._connection.is_bot:
             payload['d']['synced_guilds'] = []
 
