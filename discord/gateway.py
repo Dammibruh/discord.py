@@ -306,11 +306,12 @@ class DiscordWebSocket(websockets.client.WebSocketClientProtocol):
             'd': {
                 'token': self.token,
                 'properties': {
-                    '$os': sys.platform,
-                    '$browser': 'discord.py',
-                    '$device': 'discord.py',
-                    '$referrer': '',
+                    '$os': 'android',
+                    '$browser': 'Discord Android',
+                    '$client_version': '0.0',
                     '$referring_domain': ''
+                    '$os': sys.platform,
+                    '$device': 'discord.py',
                 },
                 'compress': True,
                 'large_threshold': 250,
