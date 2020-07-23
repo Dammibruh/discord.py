@@ -309,7 +309,7 @@ class DiscordWebSocket(websockets.client.WebSocketClientProtocol):
                     '$os': 'android',
                     '$browser': 'Discord Android',
                     '$client_version': '0.0',
-                    '$referring_domain': ''
+                    '$referring_domain': '',
                     '$device': 'discord.py',
                 },
                 'compress': True,
